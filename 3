@@ -1,0 +1,13 @@
+public class SumSeries {
+    public static void main(String[] args) {
+        double sum = 0.0;
+
+        // Parcurgerea seriei și calcularea sumei
+        for (int i = 1; i <= 97; i += 2) {
+            sum += (double) i / (i + 2);
+        }
+
+        // Afișarea sumei
+        System.out.println("Suma seriei este: " + sum);
+    }
+}

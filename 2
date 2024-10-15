@@ -1,0 +1,19 @@
+public class DivisibleBy5And6 {
+    public static void main(String[] args) {
+        int count = 0;
+
+        // Parcurgerea numerelor de la 100 la 1000
+        for (int i = 100; i <= 1000; i++) {
+            // Verificarea dacă numărul este divizibil atât cu 5, cât și cu 6
+            if (i % 5 == 0 && i % 6 == 0) {
+                System.out.print(i + " ");
+                count++;
+
+                // Afișarea câte 10 numere pe linie
+                if (count % 10 == 0) {
+                    System.out.println();
+                }
+            }
+        }
+    }
+}
